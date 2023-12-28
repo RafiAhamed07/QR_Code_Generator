@@ -1,7 +1,7 @@
 import qrcode as qr
 
 
-def QRCODE(msg="Default Message", sas="default_filename", fill_color=(0, 0, 0), back_color=(255, 255, 255)):
+def QRCODE(msg, sas, fill_color=(0, 0, 0), back_color=(255, 255, 255)):
     q = qr.QRCode(
         version=1,
         error_correction=qr.constants.ERROR_CORRECT_L,
